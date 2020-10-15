@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import PageHome from '@/components/PageHome.vue'
 import PageThreadShow from '@/components/PageThreadShow.vue'
 import PageNotFound from '@/components/PageNotFound.vue'
+import PageForum from '@/views/PageForum'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,12 @@ const routes = [
     path: '*',
     name: 'NotFound',
     component: PageNotFound
+  },
+  {
+    path: '/forum/:id',
+    name: 'Forum',
+    component: PageForum,
+    props: true
   },
   {
     path: '/about',

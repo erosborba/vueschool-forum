@@ -9,7 +9,7 @@
       </p>
       <p class="text-faded text-xsmall">
         By <a href="profile.html">{{ user.name }}</a
-        >, {{ thread.publishedAt }}
+        >, <AppDate :timestamp="thread.publishedAt" />.
       </p>
     </div>
 
@@ -23,16 +23,17 @@
         src="https://firebasestorage.googleapis.com/v0/b/forum-2a982.appspot.com/o/images%2Favatars%2Fraynathan?alt=media&amp;token=bd9a0f0e-60f2-4e60-b092-77d1ded50a7e"
         alt=""
       />
-      <!-- <span>
+      <span>
         <a class="text-xsmall" href="profile.html">Ray-Nathan James</a>
-        <p class="text-faded text-xsmall">3 hours ago</p>
-      </span> -->
+        <p class="text-faded text-xsmall"></p>
+      </span>
     </div>
   </div>
 </template>
 
 <script>
 import sourceData from '@/data'
+
 export default {
   props: {
     thread: {
