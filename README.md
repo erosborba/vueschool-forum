@@ -1,5 +1,9 @@
 # vueschool-forum
 
+Projeto criado no curso de Vue da vueschool.io.
+
+
+
 ## Project setup
 ```
 npm install
